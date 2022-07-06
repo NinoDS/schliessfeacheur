@@ -25,7 +25,10 @@
 
         <div class="general-form">
 
-            <h2 class="locker-title" >Schließfach xxx</h2>
+            <h2 class="locker-title" ></h2>
+
+            <h5>Schließfachnummer</h5>
+            <input required type="number" name="id" id="lockerId" oninput="updateLockerId()">
 
             <h4>Mieter</h4>
             <h5>Name des Mieters</h5>
@@ -78,10 +81,10 @@
 
 
             <h5>Notizen</h5>
-            <textarea></textarea>
+            <textarea class="data" name="notes"></textarea>
 
             <br><br>
-            <button type="submit">Änderungen speichern</button>
+            <button class="submit-changes-button" onclick="saveChanges()">Änderungen speichern</button>
         </div>
 
         <div class="side" >

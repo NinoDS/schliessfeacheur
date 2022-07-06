@@ -142,7 +142,7 @@ button {
     background: #d9d9d9;
 }
 
-button:active {
+button:active:not([disabled]) {
     background-color: #cbcbcb;
 }
 

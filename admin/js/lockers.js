@@ -1,3 +1,5 @@
+const url = '';
+
 let lockers;
 fetch('http://localhost:3000/lockers')
 	.then(response => response.json())
@@ -45,9 +47,17 @@ function newLockerItem(number, status) {
 	locker.innerText = number;
 	locker.classList.add(status);
 
+	tagLocker(locker, number);
+
 	item.appendChild(locker);
 
 	return item;
+}
+
+function tagLocker(element, id) {
+	element.onclick = () => {
+		location.href = `./locker.html?id=${id}`;
+	};
 }
 
 function generateLockersTable(lockers) {
@@ -95,6 +105,8 @@ function newListEntry(locker) {
 	entry.appendChild(name);
 	entry.appendChild(status);
 
+	tagLocker(entry, locker.number);
+
 	return entry;
 }
 
@@ -123,5 +135,5 @@ function setViewList() {
 	document.querySelectorAll('.list-view').forEach(element => element.classList.remove('hidden'));
 }
 
-
+// Standard view
 setViewTable();
