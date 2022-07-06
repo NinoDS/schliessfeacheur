@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schließfach</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/locker.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script defer src="js/locker.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Schließfächer</a></li>
+            <li><a href="requests.html">Anfragen</a></li>
+            <li><a href="settings.html">Einstellungen</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <div class="side" ></div>
+
+        <div class="general-form">
+
+            <h2 class="locker-title" >Schließfach xxx</h2>
+
+            <h4>Mieter</h4>
+            <h5>Name des Mieters</h5>
+            <input required type="text" name="renterName" id="renterName" autocomplete="name">
+            <br>
+
+            <div class="contact">
+                <h5>Telefon privat</h5>
+                <input required type="tel" name="phonePrivate" id="phonePrivate" autocomplete="tel">
+            </div>
+
+            <div class="contact">
+                <h5>E-Mail</h5>
+                <input required type="email" name="email" id="email" autocomplete="email">
+            </div>
+
+
+            <h4>Nutzer</h4>
+            <h5>Name des Nutzers</h5>
+            <input required type="text" name="userName" id="userName" autocomplete="name">
+            <br>
+
+            <div class="contact">
+                <h5>Telefon privat</h5>
+                <input required type="tel" name="userPhonePrivate" id="userPhonePrivate" autocomplete="tel">
+            </div>
+
+            <div class="contact">
+                <h5>E-Mail</h5>
+                <input required type="email" name="userEmail" id="userEmail" autocomplete="email">
+            </div>
+
+            <h5>Derzeitige Körpergröße des Nutzers</h5>
+            <input required type="number" name="userSize" id="userSize" min="0" max="300">
+            <p>cm</p>
+
+            <h5>Jahr des Beginns der Anmietung</h5>
+            <input required type="number" name="yearOfRenting" id="yearOfRenting" min="2000" max="2050">
+
+            <h5>Klasse bei Beginn der Anmietung</h5>
+            <input required type="text" name="classOfRenting" id="classOfRenting">
+
+            <h5>Gewünschte Fachgröße</h5>
+            <div class="lockerSize">
+                <input required type="radio" name="lockerSize" id="lockerSize1" value="A" checked>
+                <label for="lockerSize1">A</label>
+                <input required type="radio" name="lockerSize" id="lockerSize2" value="B">
+                <label for="lockerSize2">B</label>
+            </div>
+
+
+            <h5>Notizen</h5>
+            <textarea></textarea>
+
+            <br><br>
+            <button type="submit">Änderungen speichern</button>
+        </div>
+
+        <div class="side" >
+
+        </div>
+
+    </div>
+
+</body>
+</html>
