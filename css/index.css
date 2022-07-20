@@ -36,6 +36,13 @@ h1 {
     margin-top: 3em;
 }
 
+h2 {
+    font-size: 2em;
+    font-weight: 800;
+    /* margin bottom a bit smaller */
+    margin-bottom: 1em;
+}
+
 h3 {
     font-size: 1.5em;
     font-weight: 800;
@@ -65,6 +72,16 @@ input {
     height: 20px;
     width: 400px;
     border: 1px solid black;
+}
+
+textarea {
+    padding: 15px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    resize: none;
+    font-family: inherit;
+    color: #4f4f4f;
 }
 
 input:focus {
@@ -125,7 +142,7 @@ button {
     background: #d9d9d9;
 }
 
-button:active {
+button:active:not([disabled]) {
     background-color: #cbcbcb;
 }
 
