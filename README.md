@@ -1,9 +1,4 @@
 # Die Schließfächer Website in ihrer ganzen Pracht
 ...und so
 
-## TODO
-- [ ] mit dem backend verbinden
-- [ ] Anfragen Seite
-- [ ] Anmeldeseite für Admin Interface - Jimi
-- [ ] Schließfach Einzelansicht - Friedrich
-- [ ] die todos vervollständigen 
+## [TODO](https://github.com/NinoDS/schliessfeacheur/issues?q=is%3Aopen+is%3Aissue+label%3ATODO)
